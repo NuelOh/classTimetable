@@ -1,0 +1,287 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#timetableLeft {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid black;
+  align-items: center;
+  gap: 30px;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 25px 0;
+  color: orangered;
+  font-family: 'Hi Melody', cursive;
+  font-weight: bold;
+}
+
+#classNameGroup {
+  display: flex;
+  gap: 50px;
+}
+
+#classNameGroup label {
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: orangered;
+  color: white;
+  font-weight: bold;
+  font-size: 19px;
+  font-family: 'Hi Melody', cursive;
+  letter-spacing: 3px;
+}
+
+#classNameGroup input {
+  width: 300px;
+  outline: none;
+  border: 1px solid orangered;
+  border-radius: 5px;
+}
+
+#classDayGroup {
+  display: flex;
+  gap: 50px;
+}
+
+#classDayGroup span {
+  width: 80px;
+  border-radius: 5px;
+  background-color: orangered;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Hi Melody', cursive;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+#days {
+  display: flex;
+  width: 300px;
+  border: 1px solid orangered;
+  border-radius: 5px;
+  gap: 20px;
+  justify-content: center;
+}
+
+#days label {
+  color: orangered;
+}
+
+#classTimeGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 430px;
+  padding: 5px;
+  border: 1px solid orangered;
+  border-radius: 10px;
+}
+
+#classTimeGroup span {
+  display: inline-block;
+  text-align: center;
+  width: 80px;
+  border-radius: 5px;
+  background-color: orangered;
+  color: white;
+  font-family: 'Hi Melody', cursive;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.classOrder {
+  text-align: center;
+  display: inline-block;
+  width: 50px;
+  font-size: 12px;
+  color: orangered;
+}
+
+.classOrder-checkbox {
+  height: 15px;
+  width: 15px;
+}
+
+.marginLeft {
+  margin-left: 26px;
+}
+
+#times {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  width: 400px;
+  display: flex;
+  align-items: center;
+}
+
+#selectedClasses {
+  display: flex;
+  width: 430px;
+  gap: 50px;
+}
+
+#finish {
+  color: white;
+  width: 80px;
+  background: orangered;
+  overflow: hidden;
+  font-size: 19px;
+  letter-spacing: 3px;
+  font-family: 'Hi Melody', cursive;
+  border: 1px solid #d0d0d0;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+#finish:hover {
+  border-radius: 20px;
+  border: 1px solid orangered;
+}
+
+#selectedClassesList {
+  width: 300px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.list {
+  height: 50px;
+  border: 1px solid orangered;
+  border-radius: 5px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dayInput {
+  border: 1px solid #d0d0d0;
+  border-radius: 5px;
+  outline: none;
+  width: 30px;
+}
+
+.timeInput {
+  border: 1px solid #d0d0d0;
+  border-radius: 5px;
+  outline: none;
+  width: 40px;
+}
+
+#classColorGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+}
+
+#classColorGroup label {
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: orangered;
+  font-family: 'Hi Melody', cursive;
+  letter-spacing: 3px;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+#selectedColor {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #d0d0d0;
+}
+
+#confirm {
+  color: white;
+  padding: 10px;
+  background: orangered;
+  overflow: hidden;
+  border: 1px solid #d0d0d0;
+  font-family: 'Hi Melody', cursive;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+#confirm:hover {
+  border-radius: 20px;
+  border: 1px solid orangered;
+}
+
+#timetableRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#rightHead {
+  display: flex;
+  font-weight: bold;
+}
+
+#rightHead div{
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-family: 'Hi Melody', cursive;
+  background-color: orangered;
+}
+
+.right-time {
+  width: 30px;
+  border-radius: 8px;
+  background-color: orangered;
+  color: white;
+  font-family: 'Hi Melody', cursive;
+}
+
+.block {
+  display: inline-block;
+  width: 80px;
+  height: 22px;
+  line-height: 22px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.right-time {
+  border: none;
+  line-height: 22px;
+}
+
+.right-row {
+  display: flex;
+  gap: 10px;
+}
+
+#right-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

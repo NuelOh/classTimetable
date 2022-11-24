@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+  <script src="index.js" defer></script>
+</head>
+<body>
+<div id="timetableLeft">
+  <h1>강의 시간표</h1>
+  <div id="classNameGroup">
+    <label for="className">강의명</label>
+    <input type="text" id="className">
+  </div>
+  <div id="classDayGroup">
+    <span>강의 요일</span>
+    <div id="days">
+      <div id="mon">
+        <label for="monday">월</label>
+        <input type="radio" name="classDay" id="monday">
+      </div>
+      <div id="tue">
+        <label for="tuesday">화</label>
+        <input type="radio" name="classDay" id="tuesday">
+      </div>
+      <div id="wed">
+        <label for="wednesday">수</label>
+        <input type="radio" name="classDay" id="wednesday">
+      </div>
+      <div id="thu">
+        <label for="thursday">목</label>
+        <input type="radio" name="classDay" id="thursday">
+      </div>
+      <div id="fri">
+        <label for="friday">금</label>
+        <input type="radio" name="classDay" id="friday">
+      </div>
+    </div>
+  </div>
+  <div id="classTimeGroup">
+    <span>강의 시간</span>
+    <div id="times">
+      <div id="row1" class="row">
+        <label for="class1" class="classOrder">1교시</label>
+        <input type="checkbox" id="class1" class="classOrder-checkbox">
+        <label for="class2" class="classOrder marginLeft">2교시</label>
+        <input type="checkbox" id="class2" class="classOrder-checkbox">
+        <label for="class3" class="classOrder marginLeft">3교시</label>
+        <input type="checkbox" id="class3" class="classOrder-checkbox">
+        <label for="class4" class="classOrder marginLeft">4교시</label>
+        <input type="checkbox" id="class4" class="classOrder-checkbox">
+        <label for="class5" class="classOrder marginLeft">5교시</label>
+        <input type="checkbox" id="class5" class="classOrder-checkbox">
+      </div>
+      <div id="row2" class="row">
+        <label for="class6" class="classOrder">6교시</label>
+        <input type="checkbox" id="class6" class="classOrder-checkbox">
+        <label for="class7" class="classOrder marginLeft">7교시</label>
+        <input type="checkbox" id="class7" class="classOrder-checkbox">
+        <label for="class8" class="classOrder marginLeft">8교시</label>
+        <input type="checkbox" id="class8" class="classOrder-checkbox">
+        <label for="class9" class="classOrder marginLeft">9교시</label>
+        <input type="checkbox" id="class9" class="classOrder-checkbox">
+        <label for="class10" class="classOrder marginLeft">10교시</label>
+        <input type="checkbox" id="class10" class="classOrder-checkbox">
+      </div>
+      <div id="row3" class="row">
+        <label for="class11" class="classOrder">11교시</label>
+        <input type="checkbox" id="class11" class="classOrder-checkbox">
+        <label for="class12" class="classOrder marginLeft">12교시</label>
+        <input type="checkbox" id="class12" class="classOrder-checkbox">
+        <label for="class13" class="classOrder marginLeft">13교시</label>
+        <input type="checkbox" id="class13" class="classOrder-checkbox">
+        <label for="class14" class="classOrder marginLeft">14교시</label>
+        <input type="checkbox" id="class14" class="classOrder-checkbox">
+        <label for="class15" class="classOrder marginLeft">15교시</label>
+        <input type="checkbox" id="class15" class="classOrder-checkbox">
+      </div>
+      <div id="row4" class="row">
+        <label for="class16" class="classOrder">16교시</label>
+        <input type="checkbox" id="class16" class="classOrder-checkbox">
+        <label for="class17" class="classOrder marginLeft">17교시</label>
+        <input type="checkbox" id="class17" class="classOrder-checkbox">
+        <label for="class18" class="classOrder marginLeft">18교시</label>
+        <input type="checkbox" id="class18" class="classOrder-checkbox">
+        <label for="class19" class="classOrder marginLeft">19교시</label>
+        <input type="checkbox" id="class19" class="classOrder-checkbox">
+        <label for="class20" class="classOrder marginLeft">20교시</label>
+        <input type="checkbox" id="class20" class="classOrder-checkbox">
+      </div>
+    </div>
+  </div>
+  <div id="selectedClasses">
+    <button id="finish">확정</button>
+    <div id="selectedClassesList">
+      <div id="list1" class="list">
+        <input readonly type="text" name="selectedClassDay" id="selectedDay1" class="dayInput">
+        <input readonly type="text" name="selectedClassTime" id="selectedTime1" class="timeInput">
+      </div>
+      <div id="list2" class="list">
+        <input readonly type="text" name="selectedClass" id="selectedDay2" class="dayInput">
+        <input readonly type="text" name="selectedClassTime" id="selectedTime2" class="timeInput">
+      </div>
+      <div id="list3" class="list">
+        <input readonly type="text" name="selectedClass" id="selectedDay3" class="dayInput">
+        <input readonly type="text" name="selectedClassTime" id="selectedTime3" class="timeInput">
+      </div>
+      <div id="list4" class="list">
+        <input readonly type="text" name="selectedClass" id="selectedDay4" class="dayInput">
+        <input readonly type="text" name="selectedClassTime" id="selectedTime4" class="timeInput">
+      </div>
+      <div id="list5" class="list">
+        <input readonly type="text" name="selectedClass" id="selectedDay5" class="dayInput">
+        <input readonly type="text" name="selectedClassTime" id="selectedTime5" class="timeInput">
+      </div>
+    </div>
+  </div>
+  <div id="classColorGroup">
+    <label for="classColor">색깔</label>
+    <input type="color" name="classColor" id="classColor">
+    <div id="selectedColor"></div>
+  </div>
+  <button id="confirm">시간표 등록</button>
+</div>
+<div id="timetableRight">
+  <div id="rightHead" class="right-row">
+    <div class="block right-time">시간표</div>
+    <div class="block">월</div>
+    <div class="block">화</div>
+    <div class="block">수</div>
+    <div class="block">목</div>
+    <div class="block">금</div>
+  </div>
+  <div id="right-rows">
+    <div class="right-row">
+      <div class="block right-time">1교시</div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+    <div class="right-row">
+      <div class="block right-time">2교시</div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+    <div class="right-row">
+      <div class="block right-time">3교시</div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+    <div class="right-row">
+      <div class="block right-time">4교시</div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+    <div class="right-row">
+      <div class="block right-time">5교시</div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+    <div class="right-row">
+      <div class="block right-time">6교시</div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+    <div class="right-row">
+      <div class="block right-time">7교시</div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+    <div class="right-row">
+      <div class="block right-time">8교시</div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+    <div class="right-row">
+      <div class="block right-time">9교시</div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+    <div class="right-row">
+      <div class="block right-time">10교시</div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+    <div class="right-row">
+      <div class="block right-time">11교시</div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+    <div class="right-row">
+      <div class="block right-time">12교시</div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+    <div class="right-row">
+      <div class="block right-time">13교시</div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+    <div class="right-row">
+      <div class="block right-time">14교시</div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+    <div class="right-row">
+      <div class="block right-time">15교시</div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+    <div class="right-row">
+      <div class="block right-time">16교시</div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+    <div class="right-row">
+      <div class="block right-time">17교시</div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+    <div class="right-row">
+      <div class="block right-time">18교시</div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+    <div class="right-row">
+      <div class="block right-time">19교시</div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+    <div class="right-row">
+      <div class="block right-time">20교시</div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
