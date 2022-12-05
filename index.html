@@ -14,30 +14,30 @@
   <h1>강의 시간표</h1>
   <div id="classNameGroup">
     <label for="className">강의명</label>
-    <input type="text" id="className">
+    <input type="text" id="className" autocomplete="off">
   </div>
   <div id="classDayGroup">
     <span>강의 요일</span>
     <div id="days">
       <div id="mon">
         <label for="monday">월</label>
-        <input type="radio" name="classDay" id="monday">
+        <input type="radio" name="classDay" id="monday" value="월">
       </div>
       <div id="tue">
         <label for="tuesday">화</label>
-        <input type="radio" name="classDay" id="tuesday">
+        <input type="radio" name="classDay" id="tuesday" value="화">
       </div>
       <div id="wed">
         <label for="wednesday">수</label>
-        <input type="radio" name="classDay" id="wednesday">
+        <input type="radio" name="classDay" id="wednesday" value="수">
       </div>
       <div id="thu">
         <label for="thursday">목</label>
-        <input type="radio" name="classDay" id="thursday">
+        <input type="radio" name="classDay" id="thursday" value="목">
       </div>
       <div id="fri">
         <label for="friday">금</label>
-        <input type="radio" name="classDay" id="friday">
+        <input type="radio" name="classDay" id="friday" value="금">
       </div>
     </div>
   </div>
@@ -46,76 +46,51 @@
     <div id="times">
       <div id="row1" class="row">
         <label for="class1" class="classOrder">1교시</label>
-        <input type="checkbox" id="class1" class="classOrder-checkbox">
+        <input type="checkbox" id="class1" class="classOrder-checkbox" value="1" name="classOrder">
         <label for="class2" class="classOrder marginLeft">2교시</label>
-        <input type="checkbox" id="class2" class="classOrder-checkbox">
+        <input type="checkbox" id="class2" class="classOrder-checkbox" value="2" name="classOrder">
         <label for="class3" class="classOrder marginLeft">3교시</label>
-        <input type="checkbox" id="class3" class="classOrder-checkbox">
+        <input type="checkbox" id="class3" class="classOrder-checkbox" value="3" name="classOrder">
         <label for="class4" class="classOrder marginLeft">4교시</label>
-        <input type="checkbox" id="class4" class="classOrder-checkbox">
+        <input type="checkbox" id="class4" class="classOrder-checkbox" value="4" name="classOrder">
         <label for="class5" class="classOrder marginLeft">5교시</label>
-        <input type="checkbox" id="class5" class="classOrder-checkbox">
+        <input type="checkbox" id="class5" class="classOrder-checkbox" value="5" name="classOrder">
       </div>
       <div id="row2" class="row">
         <label for="class6" class="classOrder">6교시</label>
-        <input type="checkbox" id="class6" class="classOrder-checkbox">
+        <input type="checkbox" id="class6" class="classOrder-checkbox" value="6" name="classOrder">
         <label for="class7" class="classOrder marginLeft">7교시</label>
-        <input type="checkbox" id="class7" class="classOrder-checkbox">
+        <input type="checkbox" id="class7" class="classOrder-checkbox" value="7" name="classOrder">
         <label for="class8" class="classOrder marginLeft">8교시</label>
-        <input type="checkbox" id="class8" class="classOrder-checkbox">
+        <input type="checkbox" id="class8" class="classOrder-checkbox" value="8" name="classOrder">
         <label for="class9" class="classOrder marginLeft">9교시</label>
-        <input type="checkbox" id="class9" class="classOrder-checkbox">
+        <input type="checkbox" id="class9" class="classOrder-checkbox" value="9" name="classOrder">
         <label for="class10" class="classOrder marginLeft">10교시</label>
-        <input type="checkbox" id="class10" class="classOrder-checkbox">
+        <input type="checkbox" id="class10" class="classOrder-checkbox" value="10" name="classOrder">
       </div>
       <div id="row3" class="row">
         <label for="class11" class="classOrder">11교시</label>
-        <input type="checkbox" id="class11" class="classOrder-checkbox">
+        <input type="checkbox" id="class11" class="classOrder-checkbox" value="11" name="classOrder">
         <label for="class12" class="classOrder marginLeft">12교시</label>
-        <input type="checkbox" id="class12" class="classOrder-checkbox">
+        <input type="checkbox" id="class12" class="classOrder-checkbox" value="12" name="classOrder">
         <label for="class13" class="classOrder marginLeft">13교시</label>
-        <input type="checkbox" id="class13" class="classOrder-checkbox">
+        <input type="checkbox" id="class13" class="classOrder-checkbox" value="13" name="classOrder">
         <label for="class14" class="classOrder marginLeft">14교시</label>
-        <input type="checkbox" id="class14" class="classOrder-checkbox">
+        <input type="checkbox" id="class14" class="classOrder-checkbox" value="14" name="classOrder">
         <label for="class15" class="classOrder marginLeft">15교시</label>
-        <input type="checkbox" id="class15" class="classOrder-checkbox">
+        <input type="checkbox" id="class15" class="classOrder-checkbox" value="15" name="classOrder">
       </div>
       <div id="row4" class="row">
         <label for="class16" class="classOrder">16교시</label>
-        <input type="checkbox" id="class16" class="classOrder-checkbox">
+        <input type="checkbox" id="class16" class="classOrder-checkbox" value="16" name="classOrder">
         <label for="class17" class="classOrder marginLeft">17교시</label>
-        <input type="checkbox" id="class17" class="classOrder-checkbox">
+        <input type="checkbox" id="class17" class="classOrder-checkbox" value="17" name="classOrder">
         <label for="class18" class="classOrder marginLeft">18교시</label>
-        <input type="checkbox" id="class18" class="classOrder-checkbox">
+        <input type="checkbox" id="class18" class="classOrder-checkbox" value="18" name="classOrder">
         <label for="class19" class="classOrder marginLeft">19교시</label>
-        <input type="checkbox" id="class19" class="classOrder-checkbox">
+        <input type="checkbox" id="class19" class="classOrder-checkbox" value="19" name="classOrder">
         <label for="class20" class="classOrder marginLeft">20교시</label>
-        <input type="checkbox" id="class20" class="classOrder-checkbox">
-      </div>
-    </div>
-  </div>
-  <div id="selectedClasses">
-    <button id="finish">확정</button>
-    <div id="selectedClassesList">
-      <div id="list1" class="list">
-        <input readonly type="text" name="selectedClassDay" id="selectedDay1" class="dayInput">
-        <input readonly type="text" name="selectedClassTime" id="selectedTime1" class="timeInput">
-      </div>
-      <div id="list2" class="list">
-        <input readonly type="text" name="selectedClass" id="selectedDay2" class="dayInput">
-        <input readonly type="text" name="selectedClassTime" id="selectedTime2" class="timeInput">
-      </div>
-      <div id="list3" class="list">
-        <input readonly type="text" name="selectedClass" id="selectedDay3" class="dayInput">
-        <input readonly type="text" name="selectedClassTime" id="selectedTime3" class="timeInput">
-      </div>
-      <div id="list4" class="list">
-        <input readonly type="text" name="selectedClass" id="selectedDay4" class="dayInput">
-        <input readonly type="text" name="selectedClassTime" id="selectedTime4" class="timeInput">
-      </div>
-      <div id="list5" class="list">
-        <input readonly type="text" name="selectedClass" id="selectedDay5" class="dayInput">
-        <input readonly type="text" name="selectedClassTime" id="selectedTime5" class="timeInput">
+        <input type="checkbox" id="class20" class="classOrder-checkbox" value="20" name="classOrder">
       </div>
     </div>
   </div>
@@ -124,177 +99,178 @@
     <input type="color" name="classColor" id="classColor">
     <div id="selectedColor"></div>
   </div>
+  <button id="reset">초기화</button>
   <button id="confirm">시간표 등록</button>
 </div>
 <div id="timetableRight">
   <div id="rightHead" class="right-row">
     <div class="block right-time">시간표</div>
-    <div class="block">월</div>
-    <div class="block">화</div>
-    <div class="block">수</div>
-    <div class="block">목</div>
-    <div class="block">금</div>
+    <div class="block dayOrder">월</div>
+    <div class="block dayOrder">화</div>
+    <div class="block dayOrder">수</div>
+    <div class="block dayOrder">목</div>
+    <div class="block dayOrder">금</div>
   </div>
   <div id="right-rows">
     <div class="right-row">
       <div class="block right-time">1교시</div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+      <input readonly class="block" id="mon1" name="mon" value="1">
+      <input readonly class="block" id="tue1" name="tue" value="1">
+      <input readonly class="block" id="wed1" name="wed" value="1">
+      <input readonly class="block" id="thu1" name="thu" value="1">
+      <input readonly class="block" id="fri1" name="fri" value="1">
     </div>
     <div class="right-row">
       <div class="block right-time">2교시</div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+      <input readonly class="block" id="mon2" name="mon" value="2">
+      <input readonly class="block" id="tue2" name="tue" value="2">
+      <input readonly class="block" id="wed2" name="wed" value="2">
+      <input readonly class="block" id="thu2" name="thu" value="2">
+      <input readonly class="block" id="fri2" name="fri" value="2">
     </div>
     <div class="right-row">
       <div class="block right-time">3교시</div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+      <input readonly class="block" id="mon3" name="mon" value="3">
+      <input readonly class="block" id="tue3" name="tue" value="3">
+      <input readonly class="block" id="wed3" name="wed" value="3">
+      <input readonly class="block" id="thu3" name="thu" value="3">
+      <input readonly class="block" id="fri3" name="fri" value="3">
     </div>
     <div class="right-row">
-      <div class="block right-time">4교시</div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+      <div class ="block right-time">4교시</div>
+      <input readonly class="block" id="mon4" name="mon" value="4">
+      <input readonly class="block" id="tue4" name="tue" value="4">
+      <input readonly class="block" id="wed4" name="wed" value="4">
+      <input readonly class="block" id="thu4" name="thu" value="4">
+      <input readonly class="block" id="fri4" name="fri" value="4">
     </div>
     <div class="right-row">
       <div class="block right-time">5교시</div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+      <input readonly class="block" id="mon5" name="mon" value="5">
+      <input readonly class="block" id="tue5" name="tue" value="5">
+      <input readonly class="block" id="wed5" name="wed" value="5">
+      <input readonly class="block" id="thu5" name="thu" value="5">
+      <input readonly class="block" id="fri5" name="fri" value="5">
     </div>
     <div class="right-row">
       <div class="block right-time">6교시</div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+      <input readonly class="block" id="mon6" name="mon" value="6">
+      <input readonly class="block" id="tue6" name="tue" value="6">
+      <input readonly class="block" id="wed6" name="wed" value="6">
+      <input readonly class="block" id="thu6" name="thu" value="6">
+      <input readonly class="block" id="fri6" name="fri" value="6">
     </div>
     <div class="right-row">
       <div class="block right-time">7교시</div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+      <input readonly class="block" id="mon7" name="mon" value="7">
+      <input readonly class="block" id="tue7" name="tue" value="7">
+      <input readonly class="block" id="wed7" name="wed" value="7">
+      <input readonly class="block" id="thu7" name="thu" value="7">
+      <input readonly class="block" id="fri7" name="fri" value="7">
     </div>
     <div class="right-row">
       <div class="block right-time">8교시</div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+      <input readonly class="block" id="mon8" name="mon" value="8">
+      <input readonly class="block" id="tue8" name="tue" value="8">
+      <input readonly class="block" id="wed8" name="wed" value="8">
+      <input readonly class="block" id="thu8" name="thu" value="8">
+      <input readonly class="block" id="fri8" name="fri" value="8">
     </div>
     <div class="right-row">
       <div class="block right-time">9교시</div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+      <input readonly class="block" id="mon9" name="mon" value="9">
+      <input readonly class="block" id="tue9" name="tue" value="9">
+      <input readonly class="block" id="wed9" name="wed" value="9">
+      <input readonly class="block" id="thu9" name="thu" value="9">
+      <input readonly class="block" id="fri9" name="fri" value="9">
     </div>
     <div class="right-row">
       <div class="block right-time">10교시</div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+      <input readonly class="block" id="mon10" name="mon" value="10">
+      <input readonly class="block" id="tue10" name="tue" value="10">
+      <input readonly class="block" id="wed10" name="wed" value="10">
+      <input readonly class="block" id="thu10" name="thu" value="10">
+      <input readonly class="block" id="fri10" name="fri" value="10">
     </div>
     <div class="right-row">
       <div class="block right-time">11교시</div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+      <input readonly class="block" id="mon11" name="mon" value="11">
+      <input readonly class="block" id="tue11" name="tue" value="11">
+      <input readonly class="block" id="wed11" name="wed" value="11">
+      <input readonly class="block" id="thu11" name="thu" value="11">
+      <input readonly class="block" id="fri11" name="fri" value="11">
     </div>
     <div class="right-row">
       <div class="block right-time">12교시</div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+      <input readonly class="block" id="mon12" name="mon" value="12">
+      <input readonly class="block" id="tue12" name="tue" value="12">
+      <input readonly class="block" id="wed12" name="wed" value="12">
+      <input readonly class="block" id="thu12" name="thu" value="12">
+      <input readonly class="block" id="fri12" name="fri" value="12">
     </div>
     <div class="right-row">
       <div class="block right-time">13교시</div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+      <input readonly class="block" id="mon13" name="mon" value="13">
+      <input readonly class="block" id="tue13" name="tue" value="13">
+      <input readonly class="block" id="wed13" name="wed" value="13">
+      <input readonly class="block" id="thu13" name="thu" value="13">
+      <input readonly class="block" id="fri13" name="fri" value="13">
     </div>
     <div class="right-row">
       <div class="block right-time">14교시</div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+      <input readonly class="block" id="mon14" name="mon" value="14">
+      <input readonly class="block" id="tue14" name="tue" value="14">
+      <input readonly class="block" id="wed14" name="wed" value="14">
+      <input readonly class="block" id="thu14" name="thu" value="14">
+      <input readonly class="block" id="fri14" name="fri" value="14">
     </div>
     <div class="right-row">
       <div class="block right-time">15교시</div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+      <input readonly class="block" id="mon15" name="mon" value="15">
+      <input readonly class="block" id="tue15" name="tue" value="15">
+      <input readonly class="block" id="wed15" name="wed" value="15">
+      <input readonly class="block" id="thu15" name="thu" value="15">
+      <input readonly class="block" id="fri15" name="fri" value="15">
     </div>
     <div class="right-row">
       <div class="block right-time">16교시</div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+      <input readonly class="block" id="mon16" name="mon" value="16">
+      <input readonly class="block" id="tue16" name="tue" value="16">
+      <input readonly class="block" id="wed16" name="wed" value="16">
+      <input readonly class="block" id="thu16" name="thu" value="16">
+      <input readonly class="block" id="fri16" name="fri" value="16">
     </div>
     <div class="right-row">
       <div class="block right-time">17교시</div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+      <input readonly class="block" id="mon17" name="mon" value="17">
+      <input readonly class="block" id="tue17" name="tue" value="17">
+      <input readonly class="block" id="wed17" name="wed" value="17">
+      <input readonly class="block" id="thu17" name="thu" value="17">
+      <input readonly class="block" id="fri17" name="fri" value="17">
     </div>
     <div class="right-row">
       <div class="block right-time">18교시</div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+      <input readonly class="block" id="mon18" name="mon" value="18">
+      <input readonly class="block" id="tue18" name="tue" value="18">
+      <input readonly class="block" id="wed18" name="wed" value="18">
+      <input readonly class="block" id="thu18" name="thu" value="18">
+      <input readonly class="block" id="fri18" name="fri" value="18">
     </div>
     <div class="right-row">
       <div class="block right-time">19교시</div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+      <input readonly class="block" id="mon19" name="mon" value="19">
+      <input readonly class="block" id="tue19" name="tue" value="19">
+      <input readonly class="block" id="wed19" name="wed" value="19">
+      <input readonly class="block" id="thu19" name="thu" value="19">
+      <input readonly class="block" id="fri19" name="fri" value="19">
     </div>
     <div class="right-row">
       <div class="block right-time">20교시</div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+      <input readonly class="block" id="mon20" name="mon" value="20">
+      <input readonly class="block" id="tue20" name="tue" value="20">
+      <input readonly class="block" id="wed20" name="wed" value="20">
+      <input readonly class="block" id="thu20" name="thu" value="20">
+      <input readonly class="block" id="fri20" name="fri" value="20">
     </div>
   </div>
 </div>
